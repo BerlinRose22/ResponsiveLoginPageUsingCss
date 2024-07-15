@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<style type="text/css">
+		.section{
+			display: flex;
+		}
+		.section1{
+			width: 100%;
+			height: 100vh;
+			background-image: linear-gradient(to bottom,#A4A1E1 30%,#ffd7b5);
+		}
+		.section2{
+			width: 100%;
+			padding: 200px 15px;
+		}
+		body{
+			margin-top: 0;
+			margin-left: 0;
+		}
+		h1{
+			font-family: sans-serif;
+			font-weight: 400;
+			color:#ff4500;
+		}
+		label {
+			font-size: 18px;
+			font-family: sans-serif;
+		}
+
+		input[type="text"],input[type="password"]{
+			width: 100%;
+			padding: 10px 0;
+			margin: 5px 0;
+		}
+		button{
+			border:none;
+			width: 100%;
+			padding: 10px 0;
+			color: #ffffff;
+			background-color:#ff4500;
+			font-size: 18px;
+		}
+		@media (max-width:600px){
+			.section1 {display: none;}
+
+			.section2{
+			padding: 180px 20px;}
+
+			input[type="text"],input[type="password"]{padding: 13px 0;}
+
+			button{padding: 13px 0;}
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="section">
+		<div class="section1"></div>
+		<div class="section2">
+			<h1>Login Form</h1>
+			<form>
+				<label><b> Email:</b></label>
+				<input type="text" name="">
+				<label><b>Password:</b></label>
+				<input type="Password" name="">
+				<input type="checkbox" name="" style="margin: 8px 5px 8px 0;">
+				<label>Remember Me</label>
+				<button>Login</button>
+			</form>
+		</div>
+	</div>	
+
+</body>
+</html>
